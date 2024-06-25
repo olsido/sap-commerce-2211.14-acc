@@ -16,6 +16,8 @@
 		<extension name="trainingstorefront" />
 		<extension name="trainingtest" />
 
+		<extension name="solrserver" />
+
 		<extension name='droolsruleengineservices'/>
 		<extension name='rulebuilderbackoffice'/>
 		<extension name="promotionengineservices" />
