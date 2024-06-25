@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+ Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+-->
+<action-definition id="org.training.backoffice.actions.confirmpickupaction"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.hybris.com/schema/cockpitng/action-definition.xsd">
+	
+	<name>Confirm Pickup</name>
+	<description>Action to Confirm Pickup</description>
+	<author>hybris</author>
+	<version>1.0</version>
+	
+	<actionClassName>org.training.backoffice.actions.ConfirmPickupAction</actionClassName>
+
+	
+    <inputType>de.hybris.platform.ordersplitting.model.ConsignmentModel</inputType>
+	<outputType>java.lang.Object</outputType>
+	
+    <iconUri>pickup</iconUri>
+
+</action-definition>

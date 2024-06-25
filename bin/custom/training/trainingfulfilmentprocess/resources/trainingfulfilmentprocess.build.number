@@ -1,0 +1,11 @@
+#Ant properties
+#Tue May 28 03:30:13 UTC 2024
+version.api=2211
+vendor=hybris
+group.id=de.hybris.platform
+name=trainingfulfilmentprocess
+description=trainingfulfilmentprocess
+builddate=20240528 0329
+releasedate=20240528 0329
+version=2211.24
+module.name=platform-module

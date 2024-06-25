@@ -1,14 +1,6 @@
-# Compiled class file
+# Compiled classes and directories
+classes/
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
 
 # Package Files #
 *.jar
@@ -22,3 +14,37 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# IDE specific files
+*.classpath
+*.project
+*.settings/
+*.springBeans
+bin/custom/*/.externalToolBuilders/
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+
+# Dependencies
+node_modules/
+vendor/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Sensitive files
+config/tomcat/conf/jmxremote.password
+
+# Hybris files
+config/licence/
+gensrc/
+build.xml
+extensioninfo.xsd
+platformhome.properties
+beans.xsd
+items.xsd
+*-testclasses.xml
+*-webtestclasses.xml

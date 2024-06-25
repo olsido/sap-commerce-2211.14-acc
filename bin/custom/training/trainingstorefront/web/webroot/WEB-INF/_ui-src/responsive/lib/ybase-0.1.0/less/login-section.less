@@ -1,0 +1,145 @@
+.login-page__headline,
+.user-register__headline{
+	.page-headline();
+}
+
+.login-left-content-slot{
+    margin-right: 10px;
+  	margin-left: 30px;
+
+  	@media (max-width: @screen-sm-max) {
+      margin-left: 20px;
+      margin-right: 20px;
+  	}
+}
+
+.login-right-content-slot{
+    margin-right: 30px;
+  	margin-left: 10px;
+
+  	@media (max-width: @screen-sm-max) {
+      margin-left: 20px;
+      margin-right: 20px;
+  	}
+}
+
+.invalid-input {
+    background: #f6e0e0;
+    border-color: #c53131;
+}
+
+.help-block {
+    font-style: italic;
+    color: #c53131;
+}
+
+.send-verification-token{
+    form & {
+        margin-bottom: 25px;
+    }
+
+    .send-button-container {
+        margin-top: 4px;
+
+        a {
+           cursor: pointer;
+        }
+
+        a.disabled-link {
+            pointer-events: none;
+            cursor: default;
+            color: @link-disable-color;
+        }
+
+        .send-verification-token-link {
+            text-transform: uppercase;
+        }
+
+        .resend-verification-token-link {
+            display: none;
+            text-transform: uppercase;
+        }
+    }
+
+    .sent_otp_token_info {
+         display: none;
+         margin-top:5px;
+         .green-circle {
+               display: inline-block;
+               width: 21px;
+               height: 21px;
+               background-color: #38871F;
+               border-radius: 50%;
+               text-align: center;
+               line-height: 21px;
+               color: #fff;
+               font-size: 14px;
+         }
+
+        .glyphicon-ok {
+            font-size: 14px;
+        }
+
+         .info-text {
+           margin-left: 5px;
+           font-size: 14px;
+           color: #38871F;
+         }
+    }
+}
+
+.forgotten-password{
+	form & {
+    margin-bottom: 25px;
+  }
+
+  &.alert {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+	.description{
+      margin-bottom: (@grid-gutter-width/2);
+	}
+
+  #colorbox & .btn-primary {
+    margin-top: 35px;
+  }
+}
+
+.register-form-action, .login-form-action {
+  margin-top: 35px;
+}
+
+.forgotten-password + .login-form-action {
+  margin-top: 0;
+}
+
+.alert-dismissable,
+.alert-dismissible  {
+  .close {
+	right: 0;
+  }
+}
+
+.register__container {
+  .full-width-padding();
+}
+
+@media (max-width: @screen-xs-max) {
+	.login-form-action {
+		.btn-default {
+          margin-top: @grid-gutter-width * 1.5;
+		}
+	}
+}
+
+@media (max-width: @screen-xs-max) {
+	.login-section,
+  	.register-section {
+
+		.forgotten-password {
+          margin-bottom: 45px;
+		}
+	}
+}

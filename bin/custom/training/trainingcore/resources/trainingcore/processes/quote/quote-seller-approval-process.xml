@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+-->
+<process xmlns="http://www.hybris.de/xsd/processdefinition"
+         start="checkSellerApproverResponseOnQuoteAction" name="quote-seller-approval-process"
+         processClass="de.hybris.platform.commerceservices.model.process.QuoteProcessModel">
+
+    <action id="checkSellerApproverResponseOnQuoteAction" bean="checkSellerApproverResponseOnQuoteAction">
+        <transition name="OK" to="createBuyerOfferAction"/>
+        <transition name="NOK" to="quoteApprovalRejectedAction"/>
+        <transition name="ERROR" to="failed"/>
+    </action>
+
+    <action id="quoteApprovalRejectedAction" bean="quoteApprovalRejectedAction">
+        <transition name="OK" to="success"/>
+    </action>
+
+    <action id="createBuyerOfferAction" bean="createBuyerOfferAction">
+        <transition name="OK" to="success"/>
+    </action>
+
+    <end id="failed" state="FAILED">Unable to process the quote for approval.</end>
+    <end id="success" state="SUCCEEDED">Seller approval process completed.</end>
+
+</process>
+

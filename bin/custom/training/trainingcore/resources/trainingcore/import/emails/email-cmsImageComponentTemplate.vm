@@ -1,0 +1,12 @@
+#* In order to avoid chrome can not display the image because of the strict-origin-when-cross-origin
+ * when editing email pages in smartEdit, the second param of getWebsiteUrlForSite and getMediaUrlForSite
+ * are set to true to indicate that HTTPS url is required 
+ *#
+#set ( $siteUrl = $ctx.urlResolutionService.getWebsiteUrlForSite($ctx.site,true,$ctx.urlLink) )
+#set ( $mediaUrl = $ctx.urlResolutionService.getMediaUrlForSite($ctx.site,true,$ctx.media.url) )
+
+<div style="text-align: center;">
+	<a href="${siteUrl}">
+        <img src="${mediaUrl}" alt="#if(${ctx.media.altText})${ctx.media.altText}#end" border="0"/>
+    </a>
+</div>

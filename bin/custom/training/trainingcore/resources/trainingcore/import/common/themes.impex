@@ -1,0 +1,13 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+# -----------------------------------------------------------------------
+#
+# Import Themes
+# Import the themes supported by the store front
+#
+
+INSERT_UPDATE SiteTheme;code[unique=true]
+;black
+;blue
+;alpha
+;lambda
