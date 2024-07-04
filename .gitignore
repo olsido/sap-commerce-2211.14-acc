@@ -21,6 +21,7 @@ replay_pid*
 *.settings/
 *.springBeans
 bin/custom/*/.externalToolBuilders/
+hybris4intellij.properties
 
 # Temporary files
 *.log
@@ -48,6 +49,8 @@ beans.xsd
 items.xsd
 *-testclasses.xml
 *-webtestclasses.xml
+eclipsebin/
+eclipsebin_backoffice/
 
 # Exclude Solr environment-specific files
 config/solr/instances/default/solr.p12
