@@ -18,6 +18,7 @@
 
 		<extension name="solrserver" />
 
+		<!-- New promotions module -->
 		<extension name='droolsruleengineservices'/>
 		<extension name='rulebuilderbackoffice'/>
 		<extension name="promotionengineservices" />
@@ -28,5 +29,10 @@
 		<extension name="couponservices" />
 		<extension name="couponwebservices" />
 		<extension name='couponbackoffice'/>
+
+		<!-- Customer support perspective -->
+		<extension name="backoffice"/>
+		<extension name="ticketsystem"/>
+		<extension name="customersupportbackoffice"/>
 	</extensions>
 </hybrisconfig>
